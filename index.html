@@ -5,134 +5,157 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Er. Suresh Pokhrel</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
+    /* Reset CSS */
+    * {
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        box-sizing: border-box;
     }
 
-    .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-    }
-
-    h1, h2, h3 {
+    /* Body Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
         color: #333;
-    }
-
-    h2 {
-        border-bottom: 2px solid #333;
-        padding-bottom: 5px;
-    }
-
-    p {
         line-height: 1.6;
     }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
+    /* Header Styles */
+    header {
+        background-color: #343a40;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
     }
 
-    ul li {
+    header h1 {
         margin-bottom: 10px;
     }
 
-    @media screen and (max-width: 600px) {
-        .container {
-            padding: 10px;
-        }
+    /* Navigation Styles */
+    nav {
+        background-color: #212529;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #495057;
+    }
+
+    /* Main Content Styles */
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .container h2 {
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 1px solid #ced4da;
+    }
+
+    /* Gallery Styles */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contact Styles */
+    .contact {
+        margin-top: 20px;
+    }
+
+    .contact p {
+        margin-bottom: 10px;
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 </style>
 </head>
 <body>
+<header>
+    <h1>Er. Suresh Pokhrel</h1>
+    <p>Pyuthan, Nepal<br>
+        Tel: +977 9847199090<br>
+        Email: ersureshp1993@gmail.com<br>
+        LinkedIn: <a href="https://www.linkedin.com/in/mesuresh08" target="_blank" style="color: #fff;">mesuresh08</a></p>
+</header>
+
+<nav>
+    <a href="#work-experience">Work Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <div class="container">
-    <header>
-        <h1>Er. Suresh Pokhrel</h1>
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <!-- Work experience details here -->
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- Skills details here -->
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <!-- Education details here -->
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <!-- Certification details here -->
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <!-- Gallery images here -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
         <p>Pyuthan, Nepal<br>
             Tel: +977 9847199090<br>
             Email: ersureshp1993@gmail.com<br>
             LinkedIn: <a href="https://www.linkedin.com/in/mesuresh08" target="_blank">mesuresh08</a></p>
-        <hr>
-    </header>
-    <section id="intro">
-        <h2>Introduction</h2>
-        <p>I am a Dedicated IT professional, Education Consultant with a comprehensive background in Information Communication Technology and successful five-year tenure as an IT Officer in a government office. Currently, I am planning to manage an Education Consultancy in Nepal. I am seeking a challenging role in the field of technology, education, and administration, where I can leverage my technical and managerial expertise in troubleshooting, data analysis, as well as my administrative capabilities in budgeting, policy making, and collaboration to drive innovation and efficiency.</p>
-    </section>
-    <section id="work-experience">
-        <h2>Work Experience</h2>
-        <h3>2023 – Current: Managing Director, Visarete Global Education, Kathmandu (Nepal)</h3>
-        <ul>
-            <li>Assisted students in navigating the college application process.</li>
-            <li>Provided personalized advice on selecting suitable programs.</li>
-            <li>Advised students on study abroad opportunities and program options.</li>
-            <!-- Add more points here -->
-        </ul>
-        <h3>2018 – 2023: Information Technology Officer, Mallarani Rural Municipality, Pyuthan (Nepal)</h3>
-        <ul>
-            <li>Managed and maintained organization's IT infrastructure.</li>
-            <li>Ensured server reliability, performance, and security.</li>
-            <!-- Add more points here -->
-        </ul>
-    </section>
-    <section id="skills">
-        <h2>Relevant Skills</h2>
-        <h3>Web Development - Front End</h3>
-        <ul>
-            <li>Solid understanding of React & its Architecture</li>
-            <li>React Framework – create react app / next, react hooks</li>
-            <!-- Add more skills here -->
-        </ul>
-        <h3>CSS</h3>
-        <ul>
-            <li>Windows OS</li>
-            <li>Familiar with window GUI</li>
-            <!-- Add more skills here -->
-        </ul>
-        <!-- Add more skill sections here -->
-    </section>
-    <section id="other-skills">
-        <h2>Other Skills</h2>
-        <ul>
-            <li>Data collecting and Data visualization tools: Google Form, PowerBi, KoboCollect, Mwater</li>
-            <li>Video Editing Skills: Creating, editing and Customizing Videos, Familiar with Camtasia and tools, Familiar with Window Video Editor and tools, Familiar with Adobe Premier Pro and tools</li>
-            <!-- Add more skills here -->
-        </ul>
-    </section>
-    <section id="language-skills">
-        <h2>Language Skills</h2>
-        <ul>
-            <li>Nepali</li>
-            <li>English</li>
-            <li>Hindi</li>
-        </ul>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>High School (School Leaving Certificate): 2009<br>
-                Institute: Shree Mahendra Model Higher Secondary School, Pyuthan, Nepal<br>
-                Major Subject: Mathematics, Computer</li>
-            <!-- Add more education details here -->
-        </ul>
-    </section>
-    <section id="certifications">
-        <h2>Professional Certifications</h2>
-        <ul>
-            <li>Data Entry</li>
-            <li>Data Clean</li>
-            <li>Data Visualization</li>
-            <li>Data Analysis</li>
-            <li>Report Writing</li>
-            <li>Tie up with Budget</li>
-            <li>Public Procurement Monitoring of Government of Nepal</li>
-            <li>Vital Registration and Management Information System</li>
-            <!-- Add more certifications here -->
-        </ul>
     </section>
 </div>
+
+<footer>
+    <p>&copy; 2024 Er. Suresh Pokhrel. All rights reserved.</p>
+</footer>
 </body>
 </html>
